@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #696969;
+  padding: 20px 0;
+}
+
+.hd-logo {
+  font-size: 3rem;
+  margin-left: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+  li {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 5px;
+  }
+  :not(:first-child) {
+    margin-left: 55px;
+  }
+  :hover {
+    color: #fff;
+    background-color: black;
+  }
+}
