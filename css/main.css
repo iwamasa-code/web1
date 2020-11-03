@@ -192,7 +192,7 @@ html {
 
 body {
   font-size: 12px;
-  background-color: #dcdcdc;
+  background-color: #696969;
 }
 
 a {
@@ -250,7 +250,6 @@ nav ul :hover {
 }
 
 .swiper-slide {
-  background-color: red;
   text-align: center;
   height: 85vh;
   width: 100%;
@@ -283,5 +282,117 @@ nav ul :hover {
 
 .swiper-button-next {
   color: #fff;
+}
+
+@-webkit-keyframes titleAnimation {
+  0% {
+    letter-spacing: 0.3em;
+    opacity: 0;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    letter-spacing: 0.3em;
+    opacity: 0;
+  }
+}
+
+#anime {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.contents li {
+  position: relative;
+}
+
+.contents li.show h2,
+.contents li.show p,
+main .contents li.show img {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.contents li:not(:first-of-type) {
+  margin-top: 200px;
+}
+
+.contents li:nth-of-type(odd) .contentsText {
+  right: 0;
+}
+
+.contents li:nth-of-type(even) .contentsText {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contents li:nth-of-type(odd) img {
+  -webkit-transform: translate(-20px, 50px);
+          transform: translate(-20px, 50px);
+}
+
+.contents li:nth-of-type(even) img {
+  margin-left: auto;
+  -webkit-transform: translate(20px, 10px);
+          transform: translate(20px, 10px);
+}
+
+.contentsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: 40px;
+}
+
+.contents h2 {
+  font-size: 50px;
+  font-weight: bold;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 10px 15px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contents p {
+  line-height: 1.6;
+  background-color: #555;
+  font-size: 14px;
+  max-width: 340px;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contents img {
+  width: 65%;
+  border-radius: 5px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: 2s 0.5s;
+  transition: 2s 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
