@@ -248,4 +248,40 @@ nav ul :hover {
   color: #fff;
   background-color: black;
 }
+
+.swiper-slide {
+  background-color: red;
+  text-align: center;
+  height: 85vh;
+  width: 100%;
+}
+
+#slide1 {
+  background-color: blue;
+  height: 85vh;
+  width: 100%;
+  min-width: 1000px;
+}
+
+#slide2 {
+  background-color: blue;
+  height: 85vh;
+  width: 100%;
+  min-width: 1000px;
+}
+
+#slide3 {
+  background-color: blue;
+  height: 85vh;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-button-next {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
