@@ -1,28 +1,32 @@
 .swiper-slide {
-  text-align: center;
-  height: 85vh;
-  width: 100%;
+  margin-top: 20px;
 }
 
 #slide1 {
-  background-color: blue;
-  height: 85vh;
+  background-image: url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80vw 70vh;
   width: 100%;
-  min-width: 1000px;
+  height: 80vh;
 }
 
 #slide2 {
-  background-color: blue;
-  height: 85vh;
+  background-image: url("../img/img2.webp");
+  background-repeat: no-repeat;
+  background-size: 80vw 70vh;
+  background-position: center;
+  height: 80vh;
   width: 100%;
-  min-width: 1000px;
 }
 
 #slide3 {
-  background-color: blue;
-  height: 85vh;
+  background-image: url("../img/img3.webp");
+  background-repeat: no-repeat;
+  background-size: 80vw 70vh;
+  background-position: center;
+  height: 80vh;
   width: 100%;
-  min-width: 1000px;
 }
 
 .swiper-button-prev {
@@ -31,4 +35,8 @@
 
 .swiper-button-next {
   color: #fff;
+}
+
+.swiper-pagination {
+  cursor: pointer;
 }

@@ -1,10 +1,10 @@
 const mySwiper = new Swiper(".swiper-container", {
   speed: 1000,
-  effect: "coverflow",
+  // effect: "coverflow",
   loop: true,
 
   autoplay: {
-    delay: 2500, //2.5秒
+    delay: 2000, //2.0秒
   },
 
   // If we need pagination
