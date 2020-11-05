@@ -2,11 +2,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #696969;
+  background-color: #fff;
   padding: 20px 0;
 }
 
 .hd-logo {
+  color: #696969;
   font-size: 3rem;
   margin-left: 50px;
 }
@@ -18,16 +19,16 @@ nav ul {
   font-size: 1.8rem;
   margin-right: 2rem;
   li {
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 5px;
+    font-size: 2rem;
   }
   :not(:first-child) {
     margin-left: 55px;
   }
   :hover {
-    color: #fff;
-    background-color: black;
+    color: black;
   }
+}
+
+a {
+  color: #696969;
 }
